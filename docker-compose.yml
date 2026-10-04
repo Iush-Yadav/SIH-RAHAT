@@ -1,0 +1,29 @@
+# Local demonstration deployment. See DEPLOYMENT.md before sharing publicly.
+services:
+  api:
+    build: ./backend
+    image: rahat-api:local
+    environment:
+      DATABASE_URL: sqlite:////data/rahat.db
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in the root .env file}
+      CORS_ORIGINS: ${CORS_ORIGINS:-["http://localhost:3000","http://127.0.0.1:3000"]}
+      THEATRE_SEED: ${THEATRE_SEED:-20261005}
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - rahat-data:/data
+    restart: unless-stopped
+  web:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000/api/v1}
+    image: rahat-web:local
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  rahat-data:

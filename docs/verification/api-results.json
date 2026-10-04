@@ -1,0 +1,241 @@
+{
+  "checks": [
+    {
+      "path": "/health",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/kpis",
+      "expected": 401,
+      "actual": 401,
+      "pass": true
+    },
+    {
+      "path": "/auth/login",
+      "expected": 401,
+      "actual": 401,
+      "pass": true
+    },
+    {
+      "path": "/auth/login",
+      "expected": 401,
+      "actual": 401,
+      "pass": true
+    },
+    {
+      "path": "/auth/login",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/auth/login",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/auth/login",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/auth/login",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/auth/me",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/auth/roles",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/meta",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/theatre",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/kpis",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/alerts",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/convoys",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/inventory",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/inventory",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/sensors",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/forecast/series",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/forecast/leaderboard",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/scenarios",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/simulations",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/admin/audit",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/auth/me",
+      "expected": 401,
+      "actual": 401,
+      "pass": true
+    },
+    {
+      "path": "/auth/me",
+      "expected": 401,
+      "actual": 401,
+      "pass": true
+    },
+    {
+      "path": "/auth/me",
+      "expected": 401,
+      "actual": 401,
+      "pass": true
+    },
+    {
+      "path": "/auth/me",
+      "expected": 401,
+      "actual": 401,
+      "pass": true
+    },
+    {
+      "path": "/auth/me",
+      "expected": 401,
+      "actual": 401,
+      "pass": true
+    },
+    {
+      "path": "/admin/users",
+      "expected": 403,
+      "actual": 403,
+      "pass": true
+    },
+    {
+      "path": "/admin/users",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/admin/retrain",
+      "expected": 403,
+      "actual": 403,
+      "pass": true
+    },
+    {
+      "path": "/simulate",
+      "expected": 403,
+      "actual": 403,
+      "pass": true
+    },
+    {
+      "path": "/alerts/1/ack",
+      "expected": 403,
+      "actual": 403,
+      "pass": true
+    },
+    {
+      "path": "/forecast",
+      "expected": 422,
+      "actual": 422,
+      "pass": true
+    },
+    {
+      "path": "/simulations/999999",
+      "expected": 404,
+      "actual": 404,
+      "pass": true
+    },
+    {
+      "path": "/simulations",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/simulations/1",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "/simulations/1/briefing",
+      "expected": 200,
+      "actual": 200,
+      "pass": true
+    },
+    {
+      "path": "websocket authenticated snapshot + frame",
+      "pass": true
+    },
+    {
+      "path": "websocket unauthenticated rejected",
+      "pass": true
+    }
+  ],
+  "passed": 40
+}
